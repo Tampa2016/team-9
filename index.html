@@ -13,10 +13,9 @@
 <!-- ---------------------- start of the navbar ------------------->
 <div id="navbar">
             <ul id="menu"> <!-- start of a -->
-                <li><a href="#overview" class="button">Overview</a></li>
-                <li><a href="#facts" class="button">Facts</a></li>
-                <li><a href="#facts" class="button">Overview</a></li>
-                <li><a href="#facts" class="button">Overview</a></li>
+                <li><a href="#overview" class="button">WheelShareIt</a></li>
+                <li><a href="#facts" class="button">Our Mission</a></li>
+                <li><a href="#facts" class="button">Facts & Resources</a></li>
             </ul>
 </div>
 <!-- -----------------------Overview Section-------------------- -->
@@ -53,6 +52,23 @@
     
     
 </section>
+
+<!-- JAVASCRIPT CODE -->
+
+<!--jquery required for scrolling effect -->
+<script src="js/jquery.js"></script>
+
+<!-- Scrolling navigation script by Geo Miller glmiller@pic.fsu.edu -->  
+<script type='text/javascript'>
+jQuery(document).ready(function () {
+  jQuery('.button').click(function() {
+    targetName = jQuery(this).attr('href');
+    targetLocation = jQuery(targetName).offset().top;
+    jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
+    return false;
+  });
+});
+</script>
 
 </body>
 
