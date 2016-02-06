@@ -6,7 +6,11 @@
 		top: 0px;
 		left: 0px;
 		background: #FFF;
+<<<<<<< HEAD
 		width: 100%;
+=======
+		widith: 100%;
+>>>>>>> c8cae46998f0ff4c3351021d26d7f9b3b32a2901
 		z-index: 10;
 	}
 #dialogbox

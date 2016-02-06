@@ -1,4 +1,4 @@
-/// <reference path="angular.min.js" />
+/*/// <reference path="angular.min.js" />
 
 var myApp = angular.module("myModule", []);
 
@@ -49,7 +49,7 @@ my.App.controller("myController", function ($scope)
 				{
 					name:"A
 
-				}
+				}*/
 
 			/*	 </script>
 
@@ -119,10 +119,9 @@ $(function () {
 
 
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
+
+
+
 <link rel="stylesheet" href="dialog.css">
 
 
