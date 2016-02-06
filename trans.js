@@ -46,7 +46,107 @@ my.App.controller("myController", function ($scope)
 					rating:"4.5",
 					comment:"trretretre"
 				}
+				{
+					name:"A
 
-	}	
+				}
 
+			/*	 </script>
+
+					</head>
+
+    						<body>
+
+    							<div ng-controller="rate">
+
+     							 Rating: <input ng-model="Rating" type="text"/>
+
+    						  <button ng-click="greet()">Rate</button>
+			
+    					</div>
+
+  				</body>
+	
+			</html>
+
+		} */
+
+/*
+
+<form method="post" action="/echo/html/">
+    <input type="hidden" name="html" value="&lt;p&gt;Thank you for rating&lt/p&gt;" />
+    <input type="submit" value="RATE" />
+</form>
+<div id="confirmBox">
+    <div class="message"></div>
+    <span class="button yes">Yes</span>
+    <span class="button no">No</span>
+</div>	
+
+function doConfirm(msg, yesFn, noFn)
+	{
+   		 var confirmBox = $("#confirmBox");
+   		 confirmBox.find(".message").text(msg);
+  		  confirmBox.find(".Accessible,.Inaccessible").unbind().click(function()
+    			{
+     			   confirmBox.hide();
+   			 });
+   	 	confirmBox.find(".Accessible").click(yesFn);
+  		confirmBox.find(".Inaccessible").click(noFn);
+   		confirmBox.show();
+	}
+
+doConfirm("Accessible or Inaccessible", function yes()
+	{
+		
+
+	}
+
+$(function () {
+    $("form").submit(function (e) {
+        e.preventDefault();
+        var form = this;
+        doConfirm("Your rating will up us", function yes() {
+            form.submit();
+        }, function no() {
+            form.submit();
+        });
+    });
+});
+*/
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="dialog.css">
+
+
+<script src = "dialog.js"></script>
+
+</head>	
+<body>
+<div id="dialogoverlay"></div>
+<div id="dialogbox">
+	<div>
+		<div id="dialogboxhead"></div>
+		<div id="dialogboxbody"></div>
+		<div id="dialogboxfoot"></div>
+	</div>
+</div>
+
+<p id="post_1">
+	aaaaaaaaaaaaaa...
+	<button onclick= "confirm.render('Delete Post?','delete_post','post_1')">Delete</button>
+</p>
+<p id="post_1">
+	bbbbbbbbbbbbbbbb...
+	<button onclick= "confirm.render('Delete Post?','delete_post','post_1')">Delete</button>
+</p>
+</body>
+<html>
 
