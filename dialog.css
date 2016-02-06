@@ -19,7 +19,7 @@
 		z-index: 10;
 	}
 #dialogbox > div {background: #FFF; margin: 8px; }
-#dialogbox > div > #dialogboxhead{ background: rgb(255, 255, 255); font-size: 19px; padding:10px; color:#333;}
-#dialogbox > div > #dialogboxbody{ background: rgb(255,0,0); padding:20px; color:#333;}
-#dialogbox > div > #dialogboxfoot{ background: rgb(255,255,255); padding: 10px; text-align:right; color:333 }
+#dialogbox > div > #dialogboxhead{ background: rgb(255, 0, 0); font-size: 19px; padding:10px; color:#333;}
+#dialogbox > div > #dialogboxbody{ background: rgb(243,229,171); padding:20px; color:#333;}
+#dialogbox > div > #dialogboxfoot{ background: rgb(255, 0, 0); padding: 10px; text-align:right; color:333 }
 
