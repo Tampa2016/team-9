@@ -2,7 +2,7 @@ function customBox()
 	{
 		this.render = function(dialog)
 			{
-				var winW = window.innerWidith;
+				var winW = window.innerWidth;
 				var winH = window.innerHeight;	
 				var dialogoverlay = document.getElementById('dialogoverlay');
 				var dialogbox = document.getElementById('dialogbox');
@@ -11,7 +11,7 @@ function customBox()
 				dialogbox.style.left = (winW/2) - (550*.5) +"px";
 				dialogbox.style.top = "100px";
 				dialogbox.style.display = "block";
-				document.getElementById('dialogboxhead').innerHTML="b;222222222222222222222";
+				document.getElementById('dialogboxhead').innerHTML="Please work!";
 				document.getElementById('dialogboxbody').innerHTML = dialog;
 				document.getElementById('dialogboxfoot').innerHTML = '<button onclick="Box.ok() ">OK</button>'; // change to accessible
 				
@@ -23,7 +23,7 @@ function customBox()
 			}
 	}
 var Box = new customBox();
-==================================================================================
+/*==============================================================================*/
 
 
 function CustomConfirm()
