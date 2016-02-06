@@ -118,7 +118,7 @@ $(function () {
 
 
 
-
+<!--
 <!DOCTYPE html>
 <html>
 <head>
@@ -145,5 +145,31 @@ $(function () {
 <button onclick="Box.render('bfdgsgsd')">customBox</button>
 <h3>My web document content ...</h3>
 </body>
-<html>
+</html> -->
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="dialog.css">
+<script src="dialog.js"></script>
+</head>
+<body>
+<div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div>
+    <div id="dialogboxhead"></div>
+    <div id="dialogboxbody"></div>
+    <div id="dialogboxfoot"></div>
+  </div>
+</div>
+<p id="post_1">
+  <button onclick="Confirm.render('Click Accessible or Inaccessible','delete_post','post_1')">Rate</button>
+</p>
+<p id="post_2">
+  I like pickles ... 
+  <button onclick="Confirm.render('Delete Post?','delete_post','post_2')">Delete</button>
+</p>
+<button onclick="Alert.render('Hello World')">Custom Alert</button>
+</body>
+</html>

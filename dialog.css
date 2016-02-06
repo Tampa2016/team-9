@@ -6,24 +6,20 @@
 		top: 0px;
 		left: 0px;
 		background: #FFF;
-<<<<<<< HEAD
 		width: 100%;
-=======
-		widith: 100%;
->>>>>>> c8cae46998f0ff4c3351021d26d7f9b3b32a2901
 		z-index: 10;
 	}
 #dialogbox
 	{
 		display: none;
 		position: fixed;
-		background: #000;
+		background: rgb(0, 0, 0);
 		border-radius: 7px;
 		width: 550px;
 		z-index: 10;
 	}
 #dialogbox > div {background: #FFF; margin: 8px; }
-#dialogbox > div > #dialogboxhead{ background: #666; font-size: 19px; padding:10px; color:#CCC;}
-#dialogbox > div > #dialogboxbody{ background: #333; padding:20px; color:#FFF;}
-#dialogbox > div > #dialogboxfoot{ background: #666; padding: 10px; text-align:right;}
+#dialogbox > div > #dialogboxhead{ background: rgb(255, 255, 255); font-size: 19px; padding:10px; color:#333;}
+#dialogbox > div > #dialogboxbody{ background: rgb(255,0,0); padding:20px; color:#333;}
+#dialogbox > div > #dialogboxfoot{ background: rgb(255,255,255); padding: 10px; text-align:right; color:333 }
 
