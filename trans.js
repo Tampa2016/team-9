@@ -123,36 +123,11 @@ $(function () {
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="dialog.css">
 
-<style type="text/css">
-#dialogoverlay
-	{
-		display: none;
-		opacity: .8;
-		position: fixed;
-		top: 0px;
-		left: 0px;
-		backgroud: #FFF;
-		widith: 100%;
-		z-index: 10;
-	}
-#dialogbox
-	{
-		display: none;
-		position: fixed;
-		background: #000;
-		border-radius: 7px;
-		width: 550px;
-		z-index: 10;
-	}
-#dialogbox > div {background: #FFF; margin: 8px; }
-#dialogbox > div > #dialogboxhead{ background: #666; font-size: 19px; padding:10px; color:#CCC;
-#dialogbox > div > #dialogboxbody{ background: #333; padding:20px; color:#FFF;}
-#dialogbox > div > #dialogboxfoot{ background: #666; padding: 10px; text-align:right;}
-</style>
-<script>
 
-</script>
+<script src = "dialog.js"></script>
+
 </head>	
 <body>
 <div id="dialogoverlay"></div>
@@ -163,10 +138,15 @@ $(function () {
 		<div id="dialogboxfoot"></div>
 	</div>
 </div>
-<h1>My web document content ...</h1>
-<h2>My web document content ...</h2>
-<button onclick="
-<h3>My web document content ...</h3>
 
+<p id="post_1">
+	aaaaaaaaaaaaaa...
+	<button onclick= "confirm.render('Delete Post?','delete_post','post_1')">Delete</button>
+</p>
+<p id="post_1">
+	bbbbbbbbbbbbbbbb...
+	<button onclick= "confirm.render('Delete Post?','delete_post','post_1')">Delete</button>
+</p>
+</body>
 <html>
 
