@@ -9,7 +9,6 @@ body {
     background-color: #f3b03a;
     font-size: .9em;
     line-height: 1.6em;
-    padding: 100px 120px 120px 120px;
 }
 
 p {
@@ -19,37 +18,63 @@ p {
 }
 
 h1{
-    
+    padding: 20px;
+    width: 960px;
 }
 
 h2{
-    
+    padding: 20px;
 }
 
+#overview {
+    background-color: #ddd;
+	height: 1000px;
+}
+#mission {
+    background-color: #fff;
+	height: 1000px;
+}
+#facts {
+    background-color: #aaa;
+	height: 1000px;
+}
+
+/* container styles */
+
 .container {
-  width: 960px; /* static width container always stays at this width no matter what the window size */
+  width: 800px; /* static width container always stays at this width no matter what the window size */
   margin: 0 auto;
   overflow: hidden;
 }
 
+.box {
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin: 5px;
+    padding 10px;
+    line-height: 3em;
+}
+
 #navbar{
+    margin: 0px;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.6);
-	height: 54px;
+	height: 170px;
 }
 /* horizontal menu bars are typically created using a styled unordered list. Here's how! */
 ul#menu {
+    float: left;
 	list-style: none; /* eliminates bullets */
 	/* adjust padding top to adjust nav bar vertical position */
 	padding-top: 0px;
 } 
 
-} 
-ul#menu li a.button {
-	font-size: 16px;
+ul#menu li a.button {    
+	font-size: 20px;
 	text-decoration: none;
 	/* this padding defines the size of the buttons */
-	padding: 20px 100px 20px 100px; 
+	padding: 5px 40px 5px 40px; 
 }
 /* change button color when mouse hovers over */
 ul#menu li a.button:hover {
