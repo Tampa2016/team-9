@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="WheelShareItApp">
+<head>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap -->
+    <link href="styles/bootstrap.css" rel="stylesheet">
+    <link href="styles/bootstrap-theme.css" rel="stylesheet">
+    <link href="styles/font-awesome.css" rel="stylesheet">
+    <link href="styles/bootstrap-social.css" rel="stylesheet">
+    <link href="styles/mystyles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+    <div class="container" ng-controller="menuController as choice">
+            	<ul class="nav nav-tabs" role="tablist">
+            		<li role="presentation"
+            		ng-class="{active:choice.select(1)}">
+            		<a ng-click="choice.select(1)"
+            		   aria-controls="locations"
+            		   role = "tab">All Locations</a></li>
+            		<li role="presentation"
+            		ng-class="{active:choice.select(2)}">
+            		<a ng-click="choice.select(2)"
+            		   aria-controls="restaurants"
+            		   role = "tab">Restaurants</a></li>
+            		<li role="presentation"
+            		ng-class="{active:choice.select(3)}">
+            		<a ng-click="choice.select(3)"
+            		   aria-controls="Transportation"
+            		   role = "tab">Transportation Services</a></li>
+            		<li role="presentation"
+            		ng-class="active:choice.select(4)}">
+            		<a ng-click="choice.select(4)"
+            		   aria-controls="attractions"
+            		   role = "tab">Attractions</a></li>
+            	
+            	</ul>
+    </div>
+    <script>
+   function menuController($scope){
+    	var filtText="";
+    	
+    	this.select = function($scope){
+    		this.tab = setTab;
+    	if(setTab === 2)
+    		this.filtText = "restaurants";
+    	else if(setTab === 3)
+    		this.filtText = "transportation";
+    	else if(setTab === 4)
+    		this.filtText = "attractions";
+    	else
+    		this.filtText = "";
+    	}
+    	
+    	this.isSelected = function(checkTab){
+    		return (this.tab === checkTab);
+    	}
+    	
+    	var.locations=[
+    		 	{ 
+    		 	name: 'Tampa International Airport'
+    		 	address: ' 4100 George J Bean Pkwy, Tampa, FL 33607'
+    		 	phone: '813-870-8700'
+    		 	rating: '5'
+    		 	comments: 'alsdkfjas'
+    		 	category: 'transportation'
+    		 	},
+    		 	{ 
+    		 	name: 'Cab Plus'
+    		 	address: '4810 N Hale Ave, Tampa, FL 33614'
+    		 	phone: '813-288-8888'
+    		 	rating: '3'
+    		 	comments: 'asdff'
+    		 	category: 'transportation'
+    		 	},
+    		 	{
+    		 	name: 'TBARTA Commuter Services'
+    		 	address: '4350 W Cypress St #700
+    		 	phone: '813-282-8200'
+    		 	rating: '2'
+    		 	comments: 'asdfasdf'
+    		 	category: 'transportation'
+    		 	},
+    		 	{
+    		 	name: 'Skyline Limousine Tampa'
+    		 	address: '1703 N Tampa St #4'
+    		 	phone: '813-777-2685'
+    		 	rating: '5'
+    		 	comments: 'asdfads'
+    		 	category: 'transportation'
+    		 	},
+    		    {
+    		 	name: 'St Pete-Clearwater Airport'
+    		 	address: ' 14700 Terminal Blvd #221, Clearwater, FL 33762'
+    		 	phone: '727-453-7800'
+    		 	rating: '3'
+    		 	comments: 'asdfadf'
+    			category: 'transportation'
+    		    },
+    		    {
+    		    name: "Busch Gardens Tampa Bay",
+    		    address: "10165 N McKinley Dr, Tampa, FL 33612", 
+ 				phone: "(888) 800-6447",
+    		    category: "Attractions"'
+    		    rating: "4.4",
+    		    comment:"Busch Gardens was a great experience! The roller coasters were fun,
+    		    					//category: "Amusement Park"
+    		    },
+    		    				
+    		    {
+    		    name: "Adventure Island",
+    		    address:"10001 N Malcolm McKinley Dr. Tampa, FL 33612",
+    		    phone: "(888) 800-5447",
+    		    rating: "4.2",
+    		    comment:"gfdgfgfgfdgfd"
+    		    },
+    		    
+    		    {
+    		    name: "Lowry Park Zoo",
+    		    address: "1101 W Sligh Ave, Tampa, FL 33604",
+    		    phone: "(813) 935-8552",
+    		    rating:"4.1",
+    		    comment:"Ggfdgfdgfd"
+    		    },
+    		    {
+    		    name: "Florida Aquarium",
+    		    address: "701 Channelside Dr, Tampa, FL 33602",
+    		    phone:"(813) 273-4000",
+    		    rating:"4.1"
+    		    comment:"dsdss"
+    		    },
+    		    {
+    		    name:"Amalie Arena",
+    		    address: "401 Channelside Dr, Tampa, FL 33602",
+    		    phone:"(813) 301-6500",
+    		    rating:"4.5",
+    		    comment:"trretretre"
+    		    }
+    	               
+    ]
+    });
+    </script>
+   
+<script> src="../bower_components/angular/angular.min.js"</script>
+</body>
+
+</html>
