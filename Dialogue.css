@@ -1,0 +1,25 @@
+#Doverlay
+	{
+		display: none;
+		opacity: .8;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		background: #FFF;
+		width: 100%;
+		z-index: 10;
+	}
+#Dbox
+	{
+		display: none;
+		position: fixed;
+		background: rgb(0, 0, 0);
+		border-radius: 7px;
+		width: 550px;
+		z-index: 10;
+	}
+#Dbox > div {background: #FFF; margin: 8px; }
+#Dbox > div > #Dboxtop{ background: rgb(255, 0, 0); font-size: 19px; padding:10px; color:#333;}
+#Dbox > div > #Dboxmiddle{ background: rgb(243,229,171); padding:20px; color:#333;}
+#Dbox > div > #Dboxbottom{ background: rgb(255, 0, 0); padding: 10px; text-align:right; color:333 }
+
