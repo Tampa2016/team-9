@@ -12,37 +12,49 @@ body {
 }
 
 p {
-    width: 600px;
-    font-size: .9em;
+    padding: 10px;
+    width: 800px;
+    font-size: 1.2em;
     line-height: 1.2em;
+}
+hr {
+    padding: 0;
+    margin: 0;
 }
 
 h1{
-    padding: 20px;
-    width: 960px;
+    color: #000099;
+    
 }
 
 h2{
     padding: 20px;
 }
 
-#overview {
-    background-color: #ddd;
-	height: 1000px;
+#splash{
+    height: 200px;
+    background: url(images/tampaskyline.jpg);
+    background-size: cover;
+    color: #E8732B;
 }
-#mission {
-    background-color: #fff;
-	height: 1000px;
+#overview{
+    height: 1000px;
+    background-color: #456071;
 }
-#facts {
-    background-color: #aaa;
-	height: 1000px;
+#mission{
+    height: 1000px;
+    background-color: #5A282B;
+}
+#facts{
+    height: 1000px;
+    background: url(images/BMW-M3-GTS-Wallpaper-2911-.jpg) no-repeat center top fixed;
+    background-size: cover;
 }
 
 /* container styles */
 
 .container {
-  width: 800px; /* static width container always stays at this width no matter what the window size */
+  width: auto; /* static width container always stays at this width no matter what the window size */
   margin: 0 auto;
   overflow: hidden;
 }
@@ -50,7 +62,7 @@ h2{
 .box {
     float: left;
     width: 300px;
-    height: 400px;
+    height: 100%;
     margin: 5px;
     padding 10px;
     line-height: 3em;
